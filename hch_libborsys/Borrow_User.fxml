@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Borrowbk_Main_Anc" prefHeight="705.0" prefWidth="1307.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hch_libborsys.Borrow_UserController">
+   <children>
+      <AnchorPane prefHeight="31.0" prefWidth="1307.0">
+         <children>
+            <Button fx:id="close1" layoutX="1279.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" styleClass="close">
+               <stylesheets>
+                  <URL value="@newCascadeStyleSheet.css" />
+                  <URL value="@dashboardDesign.css" />
+               </stylesheets>
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" mouseTransparent="true" size="15" />
+               </graphic>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="top-form" />
+            <String fx:value="bck" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@Design.css" />
+            <URL value="@dashboardDesign.css" />
+            <URL value="@newCascadeStyleSheet.css" />
+         </stylesheets>
+      </AnchorPane>
+      <AnchorPane layoutY="33.0" prefHeight="43.0" prefWidth="1312.0">
+         <children>
+            <Label layoutX="14.0" layoutY="10.0" text="BORROW BOOK" textFill="#f7fbff">
+               <font>
+                  <Font name="Eras Bold ITC" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="bck_btn" layoutX="1276.0" layoutY="9.0" minWidth="28.0" mnemonicParsing="false" onAction="#backbtn" prefHeight="23.0" prefWidth="28.0" styleClass="invi-btn" stylesheets="@Design.css" wrapText="true">
+               <font>
+                  <Font size="8.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" size="16" />
+               </graphic>
+            </Button>
+         </children>
+         <stylesheets>
+            <URL value="@Design.css" />
+            <URL value="@Design.css" />
+            <URL value="@newCascadeStyleSheet.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="top-form" />
+            <String fx:value="dark-blue-gradient" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane fx:id="Borr_StudTeach_User_Anc" layoutX="-2.0" layoutY="74.0" prefHeight="632.0" prefWidth="1309.0">
+         <children>
+            <Button fx:id="Stud_btn" layoutX="333.0" layoutY="129.0" mnemonicParsing="false" onAction="#viewStudBor" prefHeight="326.0" prefWidth="254.0" styleClass="dark-blue-btn" stylesheets="@newCascadeStyleSheet.css" />
+            <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="417.0" layoutY="270.0" mouseTransparent="true" size="80" text="" />
+            <Label layoutX="404.0" layoutY="326.0" mouseTransparent="true" text="STUDENT" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="Teach_btn" layoutX="726.0" layoutY="129.0" mnemonicParsing="false" onAction="#viewTeachBor" prefHeight="326.0" prefWidth="254.0" styleClass="dark-blue-btn" stylesheets="@newCascadeStyleSheet.css" />
+            <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="820.0" layoutY="268.0" mouseTransparent="true" size="80" />
+            <Label layoutX="797.0" layoutY="326.0" mouseTransparent="true" text="TEACHER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Borr_Student_User_Anc" layoutX="-2.0" layoutY="74.0" prefHeight="632.0" prefWidth="1309.0" styleClass="column-header-background" visible="false">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="606.0" prefWidth="1284.0" styleClass="border_Black">
+               <stylesheets>
+                  <URL value="@newCascadeStyleSheet.css" />
+                  <URL value="@Design.css" />
+               </stylesheets>
+               <children>
+                  <AnchorPane layoutX="8.0" layoutY="379.0" prefHeight="219.0" prefWidth="578.0" styleClass="border_Black" stylesheets="@newCascadeStyleSheet.css">
+                     <children>
+                        <Label layoutX="16.0" layoutY="14.0" text="STUDENT DETAILS:">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="268.0" layoutY="33.0" text="STUDENT ID:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="StudID_Stud_Borr_txtf" layoutX="357.0" layoutY="26.0" prefHeight="40.0" prefWidth="141.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <TextField fx:id="FName_Stud_Borr_txtf" layoutX="144.0" layoutY="76.0" prefHeight="40.0" prefWidth="376.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <TextField fx:id="Section_Stud_Borr_txtf" layoutX="144.0" layoutY="117.0" prefHeight="40.0" prefWidth="203.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <TextField fx:id="YearLvl_Stud_Borr_txtf" layoutX="144.0" layoutY="154.0" prefHeight="40.0" prefWidth="203.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <Label layoutX="30.0" layoutY="81.0" text="FULL NAME:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="122.0" text="SECTION:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="159.0" text="YEAR LEVEL:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="StudID_btn" layoutX="504.0" layoutY="26.0" mnemonicParsing="false" onAction="#loadStudID" prefHeight="30.0" prefWidth="28.0" styleClass="dark-blue-btn">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="595.0" layoutY="380.0" prefHeight="219.0" prefWidth="500.0" styleClass="border_Black" stylesheets="@newCascadeStyleSheet.css">
+                     <children>
+                        <Label layoutX="24.0" layoutY="14.0" text="BOOK DETAILS:">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="215.0" layoutY="28.0" text="ACCESSION #:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="AccNo_book_Stud_Borr_txtf" layoutX="309.0" layoutY="21.0" prefHeight="40.0" prefWidth="122.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <TextField fx:id="Title_book_Stud_Borr_txtf" layoutX="124.0" layoutY="74.0" prefHeight="40.0" prefWidth="335.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <TextField fx:id="Author_book_Stud_Borr_txtf" layoutX="124.0" layoutY="115.0" prefHeight="40.0" prefWidth="335.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <Label layoutX="40.0" layoutY="79.0" text="TITLE:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="120.0" text="AUTHOR:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Category_book_Stud_Borr_txtf" layoutX="123.0" layoutY="158.0" prefHeight="40.0" prefWidth="203.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <Label layoutX="39.0" layoutY="163.0" text="CATEGORY:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="AccNo_btn" layoutX="437.0" layoutY="22.0" mnemonicParsing="false" onAction="#loadAccNo" prefHeight="30.0" prefWidth="28.0" styleClass="dark-blue-btn">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1102.0" layoutY="380.0" prefHeight="219.0" prefWidth="173.0" styleClass="border_Black" stylesheets="@newCascadeStyleSheet.css">
+                     <children>
+                        <Label layoutX="24.0" layoutY="14.0" text="DATE:">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Date_Stud_Borr_txtf" layoutX="17.0" layoutY="80.0" prefHeight="40.0" prefWidth="142.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <Label layoutX="22.0" layoutY="67.0" text="DATE:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="DueDate_Stud_Borr_txtf" layoutX="19.0" layoutY="160.0" prefHeight="40.0" prefWidth="142.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <Label layoutX="25.0" layoutY="146.0" text="DUE DATE:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1168.0" layoutY="60.0" prefHeight="304.0" prefWidth="104.0" styleClass="border_Black" stylesheets="@newCascadeStyleSheet.css">
+                     <children>
+                        <Button fx:id="Add_btn_stud_User" layoutX="9.0" layoutY="42.0" minWidth="63.0" mnemonicParsing="false" onAction="#Add_Stud_btn" prefHeight="43.0" prefWidth="86.0" styleClass="AHKANI" text="ADD" wrapText="true">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                           <stylesheets>
+                              <URL value="@Design.css" />
+                              <URL value="@newCascadeStyleSheet.css" />
+                              <URL value="@dashboardDesign.css" />
+                           </stylesheets>
+                        </Button>
+                        <Button fx:id="update_btn_stud_User" layoutX="9.0" layoutY="108.0" minWidth="63.0" mnemonicParsing="false" onAction="#Update_Stud_btn" prefHeight="43.0" prefWidth="86.0" styleClass="AHKANI" stylesheets="@Design.css" text="UPDATE" wrapText="true">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="delete_btn_stud_User" layoutX="9.0" layoutY="169.0" minWidth="63.0" mnemonicParsing="false" onAction="#Delete_Stud_btn" prefHeight="43.0" prefWidth="86.0" styleClass="AHKANI" stylesheets="@Design.css" text="DELETE" wrapText="true">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ClrAll_btn_stud_User" layoutX="8.0" layoutY="230.0" minWidth="63.0" mnemonicParsing="false" onAction="#Clear_Stud_Fields" prefHeight="43.0" prefWidth="86.0" styleClass="AHKANI" stylesheets="@Design.css" text="CLEAR" wrapText="true">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="Search_Borr_Stud_txtf" layoutX="67.0" layoutY="16.0" prefHeight="40.0" prefWidth="376.0" styleClass="textfield" stylesheets="@Design.css" />
+                  <TableView fx:id="Student_Add_Table" layoutX="31.0" layoutY="60.0" onMouseClicked="#selectStudentRow" prefHeight="304.0" prefWidth="1124.0" styleClass="border_Black" stylesheets="@Design.css">
+                     <columns>
+                        <TableColumn fx:id="Full_Name" prefWidth="272.80001068115234" text="FULL NAME" />
+                        <TableColumn fx:id="Section" prefWidth="130.4000244140625" text="SECTION" />
+                        <TableColumn fx:id="Year_Lvl" prefWidth="121.60000610351562" text="YEAR LEVEL" />
+                        <TableColumn fx:id="StudentID" prefWidth="135.199951171875" text="STUDENT ID" />
+                        <TableColumn fx:id="Acc_No" prefWidth="93.60006713867188" text="ACC NO" />
+                        <TableColumn fx:id="Title" prefWidth="200.0" text="TITLE" />
+                        <TableColumn fx:id="Author" prefWidth="170.39996337890625" text="AUTHOR" />
+                        <TableColumn fx:id="Category" prefWidth="120.0" text="CATEGORY" />
+                        <TableColumn fx:id="Date" prefWidth="140.00006103515625" text="DATE" />
+                        <TableColumn fx:id="Due_Date" prefWidth="149.5999755859375" text="DUE DATE" />
+                     </columns>
+                  </TableView>
+                  <FontAwesomeIcon glyphName="SEARCH" layoutX="39.0" layoutY="38.0" mouseTransparent="true" size="20" text="" />
+               </children>
+            </AnchorPane>
+         </children>
+         <stylesheets>
+            <URL value="@Design.css" />
+            <URL value="@dashboardDesign.css" />
+         </stylesheets>
+      </AnchorPane>
+      <AnchorPane fx:id="Borr_Teacher_User_Anc" layoutX="-1.0" layoutY="74.0" prefHeight="632.0" prefWidth="1309.0" styleClass="column-header-background" visible="false">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="606.0" prefWidth="1284.0" styleClass="border_Black">
+               <stylesheets>
+                  <URL value="@newCascadeStyleSheet.css" />
+                  <URL value="@Design.css" />
+               </stylesheets>
+               <children>
+                  <AnchorPane layoutX="8.0" layoutY="379.0" prefHeight="219.0" prefWidth="578.0" styleClass="border_Black" stylesheets="@newCascadeStyleSheet.css">
+                     <children>
+                        <Label layoutX="16.0" layoutY="14.0" text="TEACHER DETAILS:">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="FName_Teach_Borr_txtf" layoutX="144.0" layoutY="76.0" prefHeight="40.0" prefWidth="376.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <TextField fx:id="Designation_Teach_Borr_txtf" layoutX="144.0" layoutY="117.0" prefHeight="40.0" prefWidth="221.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <Label layoutX="30.0" layoutY="81.0" text="FULL NAME:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="122.0" text="DESIGNATION:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="595.0" layoutY="380.0" prefHeight="219.0" prefWidth="500.0" styleClass="border_Black" stylesheets="@newCascadeStyleSheet.css">
+                     <children>
+                        <Label layoutX="24.0" layoutY="14.0" text="BOOK DETAILS:">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="211.0" layoutY="33.0" text="ACCESSION #:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="AccNo_book_Teach_Borr_txtf" layoutX="305.0" layoutY="26.0" prefHeight="40.0" prefWidth="122.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <TextField fx:id="Title_book_Teach_Borr_txtf" layoutX="124.0" layoutY="74.0" prefHeight="40.0" prefWidth="335.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <TextField fx:id="Author_book_Teach_Borr_txtf" layoutX="124.0" layoutY="115.0" prefHeight="40.0" prefWidth="335.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <Label layoutX="40.0" layoutY="79.0" text="TITLE:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="120.0" text="AUTHOR:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Category_book_Teach_Borr_txtf" layoutX="123.0" layoutY="158.0" prefHeight="40.0" prefWidth="203.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <Label layoutX="39.0" layoutY="163.0" text="CATEGORY:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="AccNo_btn1" layoutX="433.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadAccNoTeach" prefHeight="30.0" prefWidth="28.0" styleClass="dark-blue-btn">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1102.0" layoutY="380.0" prefHeight="219.0" prefWidth="173.0" styleClass="border_Black" stylesheets="@newCascadeStyleSheet.css">
+                     <children>
+                        <Label layoutX="24.0" layoutY="14.0" text="DATE DETAILS:">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Date_Teach_Borr_txtf" layoutX="17.0" layoutY="82.0" prefHeight="40.0" prefWidth="142.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                        <Label layoutX="22.0" layoutY="67.0" text="DATE:">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1168.0" layoutY="60.0" prefHeight="304.0" prefWidth="104.0" styleClass="border_Black" stylesheets="@newCascadeStyleSheet.css">
+                     <children>
+                        <Button fx:id="Add_btn_teach_User" layoutX="9.0" layoutY="42.0" minWidth="63.0" mnemonicParsing="false" onAction="#Add_Teacher_btn" prefHeight="43.0" prefWidth="86.0" styleClass="AHKANI" text="ADD" wrapText="true">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                           <stylesheets>
+                              <URL value="@Design.css" />
+                              <URL value="@newCascadeStyleSheet.css" />
+                              <URL value="@dashboardDesign.css" />
+                           </stylesheets>
+                        </Button>
+                        <Button fx:id="Update_btn_teach_User" layoutX="9.0" layoutY="108.0" minWidth="63.0" mnemonicParsing="false" onAction="#Update_Teacher_btn" prefHeight="43.0" prefWidth="86.0" styleClass="AHKANI" stylesheets="@Design.css" text="UPDATE" wrapText="true">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Delete_btn_teach_User" layoutX="9.0" layoutY="169.0" minWidth="63.0" mnemonicParsing="false" onAction="#Delete_Teacher_btn" prefHeight="43.0" prefWidth="86.0" styleClass="AHKANI" stylesheets="@Design.css" text="DELETE" wrapText="true">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ClrAll_btn_teach_User" alignment="CENTER" layoutX="8.0" layoutY="230.0" minWidth="63.0" mnemonicParsing="false" onAction="#Clear_Teach_Fields" prefHeight="43.0" prefWidth="86.0" styleClass="AHKANI" stylesheets="@Design.css" text="CLEAR" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="Search_Borr_Teach_txtf" layoutX="67.0" layoutY="16.0" prefHeight="40.0" prefWidth="376.0" styleClass="textfield" stylesheets="@Design.css" />
+                  <FontAwesomeIcon glyphName="SEARCH" layoutX="40.0" layoutY="37.0" size="20" />
+                  <TableView fx:id="Teach_Add_Table" layoutX="31.0" layoutY="60.0" onMouseClicked="#selectTeacherRow" prefHeight="304.0" prefWidth="1124.0" styleClass="border_Black" stylesheets="@Design.css">
+                     <columns>
+                        <TableColumn fx:id="Full_Name_teach" prefWidth="272.80001068115234" text="FULL NAME" />
+                        <TableColumn fx:id="Designation_teach" prefWidth="145.60003662109375" text="DESIGNATION" />
+                        <TableColumn fx:id="Acc_No_teach" prefWidth="94.4000244140625" text="ACC NO" />
+                        <TableColumn fx:id="Title_teach" prefWidth="167.2000732421875" text="TITLE" />
+                        <TableColumn fx:id="Author_teach" prefWidth="190.39996337890625" text="AUTHOR" />
+                        <TableColumn fx:id="Category_teach" prefWidth="151.20001220703125" text="CATEGORY" />
+                        <TableColumn fx:id="Date_teach" prefWidth="151.20001220703125" text="DATE" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+         <stylesheets>
+            <URL value="@Design.css" />
+            <URL value="@dashboardDesign.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

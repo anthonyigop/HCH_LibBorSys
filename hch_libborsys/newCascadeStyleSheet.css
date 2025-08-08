@@ -1,0 +1,151 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 17, 2025, 2:07:18 PM
+    Author     : ACER
+*/
+
+.bck{
+    -fx-background-color:#f0f0f0;
+}
+
+.lightskyblue{
+    -fx-background-color:#243B55;
+}
+
+
+.search{
+    -fx-background-color:transparent;
+    -fx-border-color:linear-gradient(to bottom right, #272b3f, #256b51);
+    -fx-border-radius:5px;
+    -fx-font-size:13px;
+    -fx-font-family:"Arial";
+    -fx-border-width:1px;
+    -fx-padding:0px 0px 0px 28px;
+}
+
+
+.dark-blue-gradient {
+    -fx-background-color: linear-gradient(to right, #141E30, #243B55);
+}
+
+.dark-blue-btn{
+    -fx-background-color:linear-gradient(to bottom, #141E30, #243B55);
+    -fx-background-radius:5px;
+    -fx-text-fill:#fff;
+    -fx-font-size:12px;
+    -fx-font-family:"Arial";
+    -fx-cursor:hand;
+}
+
+.toolbar {
+     -fx-background-color: linear-gradient(to bottom, #141E30, #1B2A42, #243B55);
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.menu:focused, .menu-bar:focused {
+   -fx-background-insets: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.textfield{
+    -fx-background-color:linear-gradient(to bottom, #efefef, #eee);
+    -fx-background-radius:4px;
+    -fx-border-color:#000;
+    -fx-border-width:.4px;
+    -fx-border-radius:4px;
+    -fx-font-size:13px;
+    -fx-font-family:"Arial";
+    
+}
+.textfield:focused{
+    -fx-background-color:#fff;
+    -fx-border-color:linear-gradient(to bottom right, #272b3f, #256b51);
+    -fx-border-width:.8px;
+}
+
+.login-btn{
+    -fx-background-color:linear-gradient(to bottom, #4682B4,#2d645f);
+    -fx-background-radius:5px;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-cursor:hand;
+}
+.login-btn:hover{
+    -fx-background-color:linear-gradient(to bottom, #21a7ae,#368981);
+}
+
+
+
+top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .2px .4px;
+}
+
+
+.clear-btn{
+    -fx-background-color:#753566;
+    -fx-background-radius:8px;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-cursor:hand;
+}
+.clear-btn:hover{
+    -fx-background-color:#9d3485;
+}
+
+.icon{
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+    -fx-effect: none;
+}
+
+.nav-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-font-family:"Arial";
+    -fx-font-size:14px;
+    -fx-text-fill:#fff;
+    -fx-alignment:CENTER-LEFT;
+}
+
+
+
+/* Dark Theme Gradient Background */
+.da
+/* Dark Blue Gradient */
+.dark-blue-gradient {
+    -fx-background-color: linear-gradient(to right, #141E30, #243B55);
+}
+
+/* Black and Gray Gradient */
+.black-gray-gradient {
+    -fx-background-color: linear-gradient(to bottom, #000000, #434343);
+}
+
+/* Button with Dark Gradient */
+.dark-button {
+    -fx-background-color: linear-gradient(to right, #434343, #000000);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 15px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #555;
+    -fx-border-radius: 5px;
+}
+
+
+
+
+

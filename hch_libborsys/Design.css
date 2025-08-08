@@ -1,0 +1,264 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 6, 2025, 11:08:09 AM
+    Author     : ACER
+*/
+
+.anchor-pane { /* Apply this style class to your main AnchorPane in Scene Builder */
+     /* Light gray background, adjust as needed */
+    -fx-border-color: #cccccc; /* Light gray border, adjust as needed */
+    -fx-border-width: 1px; /* Thin border, adjust as needed */
+    -fx-border-radius: 5px; /* Slightly rounded corners, adjust as needed */
+    -fx-padding: 10px; /* Some padding inside the border, adjust as needed */
+    /* Add other background or border properties as desired */
+
+    /* Example of a slightly different style: */
+    /*
+    -fx-background-color: linear-gradient(to bottom, #e0e0e0, #f8f8f8); /* Subtle gradient background */
+    /* -fx-border-color: #b3b3b3; */
+    /* -fx-border-width: 0.5px; */
+    /* -fx-border-style: solid; */
+}
+
+.semi-top-form{
+    -fx-background-color:#efefef;
+    -fx-border-color:#000;
+    -fx-border-width:.2px .4px .8px .4px;
+}
+
+.nav-form{
+    -fx-background-color:linear-gradient(to bottom right, #272b3f, #256b51);
+}
+
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color: linear-gradient(to right, #141E30, #243B55);
+    -fx-border-width:.4px .4px .2px .4px;
+}
+
+.border_Black_BAGA{
+    -fx-background-color: #ffffff; 
+    -fx-border-color: #141E30;  
+    -fx-border-width: 2px;  
+}
+
+.border_Black{
+    -fx-background-color: #ffffff;  
+    -fx-border-color: #141E30;     
+    -fx-border-width: 0.5px;      
+    -fx-border-insets: 0;           
+    -fx-border-style: solid;
+}
+
+.dark-blue-btn-sheshh{
+    -fx-background-color:linear-gradient(to bottom, #141E30, #243B55);
+    -fx-background-radius:5px;
+    -fx-text-fill:#fff;
+    -fx-font-family:"Arial";
+    -fx-cursor:hand;
+}
+
+.invi-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-font-family:"Arial";
+    -fx-text-fill:#fff;
+}
+
+
+.dark-blue-gradient {
+    -fx-background-color: linear-gradient(to right, #141E30, #243B55);
+}
+
+
+.temporary {
+    -fx-backround-color:#D3D3D3;
+}
+
+
+.textFIELD {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px; 
+    -fx-text-fill: #333;
+    -fx-prompt-text-fill: #888;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2);
+}
+
+.textFIELD:focused {
+    -fx-border-color: #4a90e2;
+    -fx-effect: dropshadow(three-pass-box, rgba(74,144,226,0.2), 8, 0, 0, 2);
+}
+
+
+
+
+
+
+
+.lamesa-view {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px;
+}
+
+.lamesa-view .column-header-background {
+    -fx-background-color: #4a90e2;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+.lamesa-view .column-header {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.lamesa-row-cell {
+    -fx-border-color: #eee;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.lamesa-row-cell:odd {
+    -fx-background-color: #f1f1f1;
+}
+
+.lamesa-row-cell:selected {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: #ffffff;
+}
+
+
+.anchor-pane {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 20px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #333333;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #f0f0f0;
+    -fx-border-radius: 0 5px 5px 0;
+}
+
+.combo-box .arrow-button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #333333;
+    -fx-padding: 5px;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #f5f5f5;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #d9edf7;
+    -fx-text-fill: #333333;
+}
+
+.AHKANI {
+    -fx-background-color: linear-gradient(to bottom, #4A637D, #2E3E52); /* Smooth soft blue gradient */
+    -fx-text-fill: white; /* White text for clarity */
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial";
+    -fx-background-radius: 10px; /* Slightly rounded corners */
+    -fx-padding: 8px 18px;
+    -fx-border-color: #5A748E; /* Softer navy border */
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand; /* Pointer cursor */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.15), 4, 0, 0, 2); /* Softer shadow effect */
+    -fx-alignment: center;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.AHKANI:hover {
+    -fx-background-color: linear-gradient(to bottom, #5A748E, #3E5268); /* Lighten slightly on hover */
+    -fx-border-color: #6C8BA3;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 3);
+}
+
+.AHKANI:pressed {
+    -fx-background-color: #2E3E52; /* Darker, muted blue when clicked */
+    -fx-border-color: #4A637D;
+    -fx-effect: none;
+}
+
+.AHKANI:focused {
+    -fx-border-color: #82A6C1; /* Soft blue highlight on focus */
+    -fx-border-width: 2px;
+}
+
+.image-view {
+    -fx-background-image: url(HCH.jpg); /* Replace with your image URL */
+    -fx-background-size: cover; /* Or contain, depending on your needs */
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-preserve-ratio: true;
+}
+
+@media (max-width: 768px) {
+    .image-view {
+        /* Adjust properties for smaller screens if needed */
+        -fx-background-size: contain;  /* adjust as needed for smaller screens */
+        -fx-preserve-ratio: true;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-view {
+        /* Further adjustments for very small screens */
+        -fx-background-size: contain;
+        -fx-preserve-ratio: false;
+    }
+}
+
+.SIGNUPBUTTON_TANGINA{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-font-family: "Arial";
+    -fx-border-color: #3e3e3e;
+    -fx-border-width: 0.7px;
+    -fx-border-style: solid;
+    -fx-text-fill: #3e3e3e; /* Initial text color to match the border */
+    -fx-border-radius: 5px; /* Add rounded corners to match the "Login" button */
+    -fx-background-radius: 5px; /* Apply rounded corners to the background for the hover effect */
+    -fx-transition: background-color 0.3s ease, text-fill 0.3s ease;
+}
+
+.SIGNUPBUTTON_TANGINA:hover {
+    -fx-background-color: linear-gradient(to bottom, #141E30, #243B55);
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+}
+

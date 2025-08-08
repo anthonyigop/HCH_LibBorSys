@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Stud_User_Main_Anc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hch_libborsys.Student_Form_UserController">
+   <children>
+      <AnchorPane fx:id="Student_anc_add" layoutY="-6.0" prefHeight="653.0" prefWidth="1206.0">
+         <stylesheets>
+            <URL value="@Design.css" />
+            <URL value="@newCascadeStyleSheet.css" />
+            <URL value="@dashboardDesign.css" />
+         </stylesheets>
+         <children>
+            <AnchorPane layoutY="6.0" prefHeight="38.0" prefWidth="1206.0" styleClass="dark-blue-gradient">
+               <stylesheets>
+                  <URL value="@newCascadeStyleSheet.css" />
+                  <URL value="@Design.css" />
+               </stylesheets>
+               <children>
+                  <Label layoutX="20.0" layoutY="11.0" text="ADD STUDENT" textFill="WHITE">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="close1" layoutX="1169.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" prefHeight="35.0" prefWidth="34.0" styleClass="close">
+                     <stylesheets>
+                        <URL value="@newCascadeStyleSheet.css" />
+                        <URL value="@dashboardDesign.css" />
+                     </stylesheets>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="14" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="385.0" layoutY="54.0" prefHeight="588.0" prefWidth="806.0" styleClass="top-form" stylesheets="@Design.css">
+               <children>
+                  <TableView fx:id="Student_Add_Table" layoutX="21.0" layoutY="71.0" onMouseClicked="#selectStudentRow" prefHeight="498.0" prefWidth="770.0" styleClass="top-form" stylesheets="@Design.css">
+                     <columns>
+                        <TableColumn fx:id="Full_Name" prefWidth="347.9999694824219" text="FULL NAME" />
+                        <TableColumn fx:id="Section" prefWidth="168.79998779296875" text="SECTION" />
+                        <TableColumn fx:id="Year_Lvl" prefWidth="111.199951171875" text="YEAR LEVEL" />
+                        <TableColumn fx:id="Student_ID" prefWidth="142.39990234375" text="STUDENT ID" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="Search_Stud_txtf" layoutX="51.0" layoutY="25.0" prefHeight="40.0" prefWidth="511.0" styleClass="textfield" stylesheets="@Design.css" />
+                  <FontAwesomeIcon glyphName="SEARCH" layoutX="21.0" layoutY="45.0" mouseTransparent="true" size="20" text="" />
+                  <Button fx:id="Student_refresh_btn" layoutX="569.0" layoutY="27.0" mnemonicParsing="false" onAction="#refresh" prefHeight="26.0" prefWidth="50.0" styleClass="dark-blue-btn">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="REFRESH" size="14" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="54.0" prefHeight="588.0" prefWidth="358.0" styleClass="top-form" stylesheets="@Design.css">
+               <children>
+                  <Label layoutX="22.0" layoutY="33.0" prefHeight="22.0" prefWidth="174.0" text="ENTER DETAILS HERE:" />
+                  <TextField fx:id="FullName_Stud_Add_User" layoutX="40.0" layoutY="104.0" prefWidth="254.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                  <TextField fx:id="Section_Stud_Add_User" layoutX="40.0" layoutY="153.0" prefWidth="254.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                  <TextField fx:id="YearLvl_Stud_Add_User" layoutX="40.0" layoutY="208.0" prefWidth="254.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                  <TextField fx:id="StudentID_Stud_Add_User" layoutX="40.0" layoutY="270.0" prefWidth="254.0" styleClass="textFIELD" stylesheets="@Design.css" />
+                  <Button fx:id="Add_btn_User" layoutX="26.0" layoutY="539.0" minWidth="63.0" mnemonicParsing="false" onAction="#Add_std_btn" prefHeight="30.0" prefWidth="70.0" styleClass="dark-blue-btn" stylesheets="@Design.css" text="ADD" wrapText="true">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Update_btn_User" layoutX="100.0" layoutY="539.0" minWidth="63.0" mnemonicParsing="false" onAction="#updateStudent" prefHeight="30.0" prefWidth="70.0" styleClass="dark-blue-btn" stylesheets="@Design.css" text="UPDATE" wrapText="true">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Delete" layoutX="174.0" layoutY="539.0" minWidth="63.0" mnemonicParsing="false" onAction="#deleteStudent" prefHeight="30.0" prefWidth="70.0" styleClass="dark-blue-btn" stylesheets="@Design.css" text="DELETE" wrapText="true">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ClearAll_btn_User" layoutX="248.0" layoutY="539.0" minWidth="63.0" mnemonicParsing="false" onAction="#CLR_BTN_STD" prefHeight="30.0" prefWidth="83.0" styleClass="dark-blue-btn" stylesheets="@Design.css" text="CLEAR ALL" wrapText="true">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

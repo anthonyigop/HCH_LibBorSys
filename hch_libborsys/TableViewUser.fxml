@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ViewBook_Anc_Main" prefHeight="695.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hch_libborsys.TableViewUserController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="31.0" prefWidth="979.0" styleClass="bck">
+         <children>
+            <Button fx:id="close" layoutX="948.0" layoutY="3.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="10.0" styleClass="close">
+               <stylesheets>
+                  <URL value="@newCascadeStyleSheet.css" />
+                  <URL value="@dashboardDesign.css" />
+               </stylesheets>
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" mouseTransparent="true" size="15" />
+               </graphic>
+            </Button>
+         </children>
+         <stylesheets>
+            <URL value="@Design.css" />
+            <URL value="@newCascadeStyleSheet.css" />
+         </stylesheets>
+      </AnchorPane>
+      <AnchorPane layoutX="11.0" layoutY="100.0" prefHeight="574.0" prefWidth="958.0" styleClass="border_Black">
+         <children>
+            <TableView fx:id="Student_Add_Table_View" layoutX="14.0" layoutY="54.0" prefHeight="518.0" prefWidth="930.0" styleClass="top-form" stylesheets="@Design.css">
+               <columns>
+                  <TableColumn fx:id="Title" prefWidth="291.19995880126953" text="TITLE" />
+                  <TableColumn fx:id="Acc_No" prefWidth="97.60001373291016" text="ACC NO" />
+                  <TableColumn fx:id="Author" prefWidth="244.0" text="AUTHOR" />
+                  <TableColumn fx:id="Category" prefWidth="147.20001220703125" text="CATEGORY" />
+                  <TableColumn fx:id="Status" prefWidth="148.00003662109373" text="STATUS" />
+               </columns>
+            </TableView>
+            <TextField fx:id="Search_Borr_Teach_txtf" layoutX="45.0" layoutY="15.0" prefHeight="31.0" prefWidth="376.0" styleClass="textfield">
+               <stylesheets>
+                  <URL value="@Design.css" />
+                  <URL value="@dashboardDesign.css" />
+               </stylesheets></TextField>
+            <FontAwesomeIcon glyphName="SEARCH" layoutX="23.0" layoutY="34.0" mouseTransparent="true" size="16" />
+         </children>
+         <stylesheets>
+            <URL value="@Design.css" />
+            <URL value="@dashboardDesign.css" />
+            <URL value="@newCascadeStyleSheet.css" />
+         </stylesheets>
+      </AnchorPane>
+      <AnchorPane layoutY="34.0" prefHeight="51.0" prefWidth="979.0" styleClass="dark-blue-gradient" stylesheets="@newCascadeStyleSheet.css">
+         <children>
+            <Label layoutX="22.0" layoutY="14.0" text="AVAILABLE BOOKS" textFill="#eaeaea">
+               <font>
+                  <Font name="Eras Bold ITC" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
